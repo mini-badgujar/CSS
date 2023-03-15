@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website-layouts</title>
+    <style>
+        body{
+            position: relative;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            background-color: gainsboro;
+        }
+        .header{
+            position: relative;
+            box-sizing: border-box;
+            background-color: rgba(100, 100, 100, 0.404);
+            height: 100px;
+            text-align: center;
+            padding: 10px;
+        }
+        .nav{
+            position: relative;
+            background-color: rgb(0, 0, 0);
+        }
+        .nav ul{
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+        }
+        .nav li{
+            position: relative;
+            line-height: 55px;
+            height: 55px;
+            padding: 0px 10px;
+            display: inline-block;
+            list-style: none;
+        }
+        .nav a{
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        .nav li:hover{
+            background-color: rgb(255, 61, 61);
+        }
+        .container{
+            height: 400px;
+            width: 100%;
+        }
+        .container div{
+            position: relative;
+            background-color: whitesmoke;
+            height: 350px;
+            padding: 10px;
+            margin: 15px 10px 0px 10px
+        }
+        .left{
+            float: left;
+            width: 25%;
+        }
+        .right{
+            float: left;
+            width: 25%;
+        }
+        .center{
+            float: left;
+            width: 41%;
+        }
+       
+        .footer{
+            box-sizing: border-box;
+            background-color: rgba(196, 196, 196, 0.603);
+            height: 100px;
+            text-align: center;
+            padding: 10px;
+
+        }
+        @media screen and (max-width:400px){
+            .container .left, .container .right, .container .center{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Header</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="column left">
+            <h1 style="text-align: center;">Side column</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore odio maiores alias temporibus. Nihil, ut. Sunt explicabo sapiente repudiandae eaque ea accusantium ad delectus officia soluta in, sed beatae.
+            </p>
+        </div>
+        <div class="column center">
+            <h1 style="text-align: center;">Middle column</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore odio maiores alias temporibus. Nihil, ut. Sunt explicabo sapiente repudiandae eaque ea accusantium ad delectus officia soluta in, sed beatae.
+            </p>    
+        </div>
+        <div class="column right">
+            <h1 style="text-align: center;">Side column</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore odio maiores alias temporibus. Nihil, ut. Sunt explicabo sapiente repudiandae eaque ea accusantium ad delectus officia soluta in, sed beatae.
+            </p>    
+        </div>
+    </div>
+    <div class="footer">
+        <h3>&reg;2023</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        .box{
+            box-sizing: border-box;
+            height: 200px;
+            width: 100%;
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: rgba(155, 127, 255, 0.233);
+        }
+        .one{
+            font-size: 30px;
+        }
+        .one span{
+            font-size: 0.5em;
+        }
+        .two{
+            font-size: 20px;
+        }
+        .two span{
+            font-size: 1.5ex;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Units in HTML</h1>
+    <div class="box one"><p>em -Relative to the font-size of the element, 2em means 2 times the size of the current font</p>
+    <p>The font-size of the div element is set to 30px. <span>The span element inside the div element has a font-size of 0.5em, which equals to 0.5x30 = 15px</span>.</p>
+    </div>
+    <div class="box two"><p>ex - Relative to the x-height of the current font (rarely used)</p>
+    <p>The font-size of the div element is set to 20px. <span>The span element inside the div element has a font-size of 1.5ex</span></p></div>
+    <div class="box three"><p>ch - Relative to width of the "0" (zero)	</p>
+        <p>The font-size of the div element is set to 10px. <span>The span element inside the div element has a font-size of 2ch</span></p>
+    </div>
+    <div class="box four"><p>rem - Relative to font-size of the root element</p></div>
+    <div class="box five"><p>vw - Relative to 1% of the width of the viewport*</p></div>
+    <div class="box six"><p>vh - Relative to 1% of the height of the viewport*</p></div>
+    <div class="box seven"><p>vmin - Relative to 1% of viewport's* smaller dimension</p></div>
+    <div class="box eight"><p>vmax - Relative to 1% of viewport's* larger dimension</p></div>
+    <div class="box nine"><p>% - Relative to the parent element</p></div>
+    
+
+
+
+
+
+</body>
+</html>

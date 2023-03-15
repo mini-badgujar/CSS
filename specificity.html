@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+</head>
+<body>
+    <h1>Specificity Hierarchy</h1>
+    <p>If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win", and its style declaration will be applied to that HTML element. Think of specificity as a score/rank that determines which style declaration is ultimately applied to an element.</p>
+    <p>Four categories of specificity</p>
+    <ul>
+        <li><strong>Inline styles</strong> - Elements and pseudo-elements</li>
+        <li><strong>IDs</strong> - Example: #navbar</li>
+        <li><strong>Classes, pseudo-classes, attribute selectors</strong> - Example: .test, :hover, [href]</li>
+        <li><strong>Elements and pseudo-elements</strong> - Example: h1, ::before</li>
+    </ul>
+    <p>There is one exception to this rule: if you use the !important rule, it will even override inline styles!</p>
+    <hr>
+    <h1>!important rule</h1>
+    <p>The !important rule in CSS is used to add more importance to a property/value than normal.</p>
+    <p>if you use the !important rule, it will override ALL previous styling rules for that specific property on that element!</p>
+    <p>The only way to override an !important rule is to include another !important rule on a declaration with the same (or higher) specificity in the source code</p>
+</body>
+</html>
