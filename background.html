@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        div{
+            width: 100%;
+            height: 500px;
+            position: relative;
+            padding: 10px;
+            margin: 10px;
+            border: 5px dashed crimson;
+            text-align: justify;
+        }
+        h3{
+            color:crimson;
+            font-size: 30px;
+        }
+        p{
+            font-size: 22px;
+        }
+        #color{
+            background-color: rgba(0, 206, 209, 0.5);
+            opacity: 0.8;
+        }
+        #image{
+            background-image: url("../Images/background.jpg");
+            background-repeat: repeat-x;
+            background-position: right bottom;
+        }
+        #repeat{
+            background-image: url("../Images/background.jpg");
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: cover;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>CSS - Backgrounds</h1>
+    <section class="container">
+        <div id="color">
+            <h3>Background color:</h3>
+            <p>The background color is set to darkturquoise, and opacity is set to 0.8 whereas transparency is set to 0.5.</p>
+            <p>Opacity is applied to all the chils elements of this div and hence even the text is tarensparent toa void this we use transparency.</p>
+        </div>
+        <div id="image">
+            <h3>Background image and repeat</h3>
+            <p>
+                Background image is set also the repeat is set to horizontal repeat only plus the position is tet toright bottom.
+            </p>
+            <p>we can also set backgrount to repeat verticaly using background repeat: repeat-y;</p>
+        </div>
+        <div id="repeat">
+            
+        </div>
+    </section>
+</body>
+</html>

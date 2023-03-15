@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMBINATOR SELECTOR</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h3>COMBINATOR SELECTOR:</h3>
+    <br><hr><br>
+    <p>A combinator is something that explains the relationship between the selectors.A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.</p>
+    <ul>
+        <li>descendant selector (space)</li>
+        <li>child selector (>)</li>
+        <li>adjacent sibling selector (+)</li>
+        <li>general sibling selector (~)</li>
+    </ul>
+    <h4>descendant Selector</h4>
+    <div class="div3">
+        <p>This is a descendent selector</p>
+        <span>This style will be applied to all p insind the div 3 class</span>
+        <p>this is p element</p>
+        <span>this is a span element</span>
+    </div>
+    <h4>Child Selector</h4>
+    <div class="div4">
+        <p>This is a child selector</p>
+        <span>This style will be applied to all p insind the div 4 class</span>
+        <p>this is p element</p>
+        <span>this is a span element</span>
+    </div>
+    <h4>Adjacent Selector</h4>
+    <div class="div5">
+        <p>This is a adjacent sibling selector</p>
+        <span>This style will be applied to all first adjacent after all divs</span>
+        <p>this is p element</p>
+        <span>this is a span element</span>
+    </div>
+    <p>adjacent style is applied to this p immediately after div 5 </p>
+    <h4>general sibling Selector</h4>
+    <div class="div6">
+        <p>This is a general sibling selector</p>
+        <span>This style will be applied to all siblings after all divs</span>
+        <p>this is p element</p>
+        <span>this is a span element</span>
+    </div>
+    <span>adjacent style is applied to span after this div 6 </span>
+    <span>this is span tag here</span>
+    <p>this is p tag here and the style is not applied to this p</p>
+</body>
+</html>

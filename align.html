@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align</title>
+    <style>
+        .box1{
+            height: 100px;
+            width: 200px;
+            border: 2px solid rgb(33, 0, 124);
+            background-color: rgb(200, 255, 237);
+            margin: auto;
+        }
+        .box2{
+            height: 100px;
+            width: 200px;
+            border: 2px solid rgb(21, 124, 0);
+            background-color: rgb(217, 255, 200);
+            text-align: center;
+        }
+        .box3{
+            padding: 10px;
+            height: fit-content;
+            width: 100%;
+            border: 2px solid rgb(124, 0, 0);
+            background-color: rgb(255, 202, 200);
+        }
+        .box3 img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box4{
+            position: absolute;
+            margin-left: 800px;
+            padding: 10px;
+            height: fit-content;
+            width: 10%;
+            border: 2px solid rgb(124, 0, 76);
+            background-color: rgb(255, 200, 237);
+        }
+        .box5{
+            height: 100px;
+            width: 500px;
+            border: 2px solid rgb(33, 0, 124);
+            background-color: rgb(200, 255, 237);
+            padding: 100px 0;
+        }
+        .box6{
+            line-height: 60px;
+            height: 100px;
+            width: 500px;
+            border: 2px solid rgb(33, 0, 124);
+            background-color: rgb(200, 255, 237);
+            text-align: center;
+        }
+        .box7{
+            padding: 10px;
+            height: fit-content;
+            position: relative;
+            width: 100%;
+            border: 2px solid rgb(124, 0, 0);
+            background-color: rgb(255, 202, 200);
+        }
+        .inbox7{
+            margin: 0;
+            padding: 10px;
+            height: 20px;
+            width: 100px;
+            border: 2px solid rgb(124, 0, 0);
+            background-color: rgb(255, 202, 200);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .box8{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border: 3px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Horizontal-align to center</h1>
+    <p>To horizontally center a block element (like &ltdiv&gt), use margin: auto;</p>
+    <p>The element will then take up the specified width, and the remaining space will be split equally between the two margins:</p>
+    <p>Center aligning has no effect if the width property is not set (or set to 100%).</p>
+    <div class="box1">
+        <p>This is horizontally align to center</p>
+    </div>
+    <hr>
+    <h1>Align text to center</h1>
+    <p>To just center the text inside an element, use text-align: center;</p>
+    <div class="box2">
+        <p>This text is align to center</p>
+    </div>
+    <hr>
+    <h1>Align image to center</h1>
+    <p>To center an image, set left and right margin to auto and make it into a block element:</p>
+    <div class="box3">
+        <img src="..\Images\background.jpg">
+        <p>This image is align to center</p>
+    </div>
+    <hr>
+    <h1>Align image to center</h1>
+    <p>To center an image, set left and right margin to auto and make it into a block element:</p>
+    <div class="box4">
+        <p>This is align to 800px right</p>
+    </div>
+    <hr>
+    <h1>Vertically-align to center using padding</h1>
+    <p>We can vertically align elements using top and bottom padding</p>
+     <div class="box5">
+        <p>This is vertically align to center</p>
+    </div>
+    <hr>
+    <h1>Center Vertically - Using line-height</h1>
+    <p>Another trick is to use the line-height property with a value that is equal to the height property:</p>
+    <div class="box6">
+        <p>This is vertically align to center</p>
+    </div>
+    <hr>
+    <h1>Center Vertically - Using position & transform</h1>
+    <p>If padding and line-height are not options, another solution is to use positioning and the transform property:</p>
+    <div class="box7">
+        <p>This is vertically align to center</p>
+        <div class="inbox7"></div>
+    </div>
+    <hr>
+    <h1>Center Vertically - Using Flexbox</h1>
+    <p>You can also use flexbox to center things.</p>
+    <div class="box8">
+        <p>This is vertically align to center</p>
+    </div>
+</body>
+</html>

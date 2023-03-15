@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        .nav {
+            background-color: black;
+        }
+        .nav > ul{
+            position: relative;
+        }
+
+        
+        .nav  li{
+            height: 20px;
+            list-style-type: none;
+            display: inline-block;
+            padding: 20px;
+        }
+        .nav a{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+        .nav li:hover{
+            background-color: rgb(207, 7, 7);            
+        }
+        .nav .dropdown ul{
+            height: fit-content;
+            padding-inline-start: 5px;
+        }
+        .dropdown {
+            display:none;
+            position: absolute;
+            z-index: 999999;
+            background: #000;
+            width: 15vw;
+        }
+
+        .nav > ul li:hover .dropdown{
+            display: block !important;
+        }
+        .image{
+            height: 50px;
+            width: 50px;
+        }
+        .image img:hover{
+            zoom: 200%;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#">Level 1</a></li>
+                        <li><a href="#">Level 2</a></li>
+                        <li><a href="#">Level 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="more"><a  href="#" >About</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#">About Level 1</a></li>
+                        <li><a href="#">About Level 2</a></li>
+                        <li><a href="#">About Level 3</a></li>
+                    </ul>
+                </div>
+            </li></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+       
+    
+</div>
+    <div class="image">
+        <img src="..\Images\emoji.png" width="100">       
+    </div>
+
+</body>
+</html>

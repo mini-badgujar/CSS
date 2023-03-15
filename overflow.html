@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        div{
+            box-sizing: border-box;
+            height: 100px;
+            width: 800px;
+            background-color: bisque;
+        }
+        .div1{
+            overflow: visible;
+            margin-bottom: 200px;
+        }
+        .div2{
+            overflow: scroll;
+            margin-bottom: 50px;
+        }
+        .div3{
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+        .div4{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overflow property</h1>
+    <p>
+        The CSS overflow property controls what happens to content that is too big to fit into an area.
+        The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+    </p>
+    <ul>
+        <li>visible - Default. The overflow is not clipped. The content renders outside the element's box</li>
+        <li>hidden - The overflow is clipped, and the rest of the content will be invisible</li>
+        <li>scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content</li>
+        <li>auto - Similar to scroll, but it adds scrollbars only when necessary</li>
+    </ul>
+    <div class="div1">
+        <h3>visible</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem perspiciatis repellat ducimus ratione facere voluptatem molestiae excepturi omnis! Officia a, animi eveniet laborum qui suscipit corrupti. Laudantium eveniet quas accusamus?
+        Fugiat aliquid inventore, sit unde sunt illo ducimus quaerat dicta rem corporis, pariatur placeat doloremque quibusdam ea? Repellat suscipit autem ad at, fugiat consequuntur incidunt repudiandae, rem accusamus maiores doloribus.
+        Tempore quas ut alias fuga aperiam, temporibus perspiciatis at aliquid fugit reprehenderit voluptates. Nam atque voluptates eveniet ipsa fugit, nobis officia, nesciunt natus, sint nulla laudantium earum veniam ad! Eaque?
+        Eos non quam minima odio voluptatem id vel ullam voluptate tempore, incidunt nesciunt quisquam quis? Nulla, ea repellendus quod qui consectetur placeat eius voluptatum deserunt maiores fuga, officia animi recusandae?
+        Nihil, quas, consequuntur voluptatem ab iure amet voluptatum reiciendis optio quia quod modi vero earum magni commodi esse non unde officiis tempore eius iusto officia fuga sint! Porro, commodi amet!</p>
+    </div>
+    <div class="div2">
+        <h3>scroll</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem perspiciatis repellat ducimus ratione facere voluptatem molestiae excepturi omnis! Officia a, animi eveniet laborum qui suscipit corrupti. Laudantium eveniet quas accusamus?
+        Fugiat aliquid inventore, sit unde sunt illo ducimus quaerat dicta rem corporis, pariatur placeat doloremque quibusdam ea? Repellat suscipit autem ad at, fugiat consequuntur incidunt repudiandae, rem accusamus maiores doloribus.
+        Tempore quas ut alias fuga aperiam, temporibus perspiciatis at aliquid fugit reprehenderit voluptates. Nam atque voluptates eveniet ipsa fugit, nobis officia, nesciunt natus, sint nulla laudantium earum veniam ad! Eaque?
+        Eos non quam minima odio voluptatem id vel ullam voluptate tempore, incidunt nesciunt quisquam quis? Nulla, ea repellendus quod qui consectetur placeat eius voluptatum deserunt maiores fuga, officia animi recusandae?
+        Nihil, quas, consequuntur voluptatem ab iure amet voluptatum reiciendis optio quia quod modi vero earum magni commodi esse non unde officiis tempore eius iusto officia fuga sint! Porro, commodi amet!</p>
+    </div>
+    <div class="div3">
+        <h3>hidden</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem perspiciatis repellat ducimus ratione facere voluptatem molestiae excepturi omnis! Officia a, animi eveniet laborum qui suscipit corrupti. Laudantium eveniet quas accusamus?
+        Fugiat aliquid inventore, sit unde sunt illo ducimus quaerat dicta rem corporis, pariatur placeat doloremque quibusdam ea? Repellat suscipit autem ad at, fugiat consequuntur incidunt repudiandae, rem accusamus maiores doloribus.
+        Tempore quas ut alias fuga aperiam, temporibus perspiciatis at aliquid fugit reprehenderit voluptates. Nam atque voluptates eveniet ipsa fugit, nobis officia, nesciunt natus, sint nulla laudantium earum veniam ad! Eaque?
+        Eos non quam minima odio voluptatem id vel ullam voluptate tempore, incidunt nesciunt quisquam quis? Nulla, ea repellendus quod qui consectetur placeat eius voluptatum deserunt maiores fuga, officia animi recusandae?
+        Nihil, quas, consequuntur voluptatem ab iure amet voluptatum reiciendis optio quia quod modi vero earum magni commodi esse non unde officiis tempore eius iusto officia fuga sint! Porro, commodi amet!</p>
+    </div>
+    <div class="div4">
+        <h3>auto</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem perspiciatis repellat ducimus ratione facere voluptatem molestiae excepturi omnis! Officia a, animi eveniet laborum qui suscipit corrupti. Laudantium eveniet quas accusamus?
+        Fugiat aliquid inventore, sit unde sunt illo ducimus quaerat dicta rem corporis, pariatur placeat doloremque quibusdam ea? Repellat suscipit autem ad at, fugiat consequuntur incidunt repudiandae, rem accusamus maiores doloribus.
+        Tempore quas ut alias fuga aperiam, temporibus perspiciatis at aliquid fugit reprehenderit voluptates. Nam atque voluptates eveniet ipsa fugit, nobis officia, nesciunt natus, sint nulla laudantium earum veniam ad! Eaque?
+        Eos non quam minima odio voluptatem id vel ullam voluptate tempore, incidunt nesciunt quisquam quis? Nulla, ea repellendus quod qui consectetur placeat eius voluptatum deserunt maiores fuga, officia animi recusandae?
+        Nihil, quas, consequuntur voluptatem ab iure amet voluptatum reiciendis optio quia quod modi vero earum magni commodi esse non unde officiis tempore eius iusto officia fuga sint! Porro, commodi amet!</p>
+    </div>
+</body>
+</html>

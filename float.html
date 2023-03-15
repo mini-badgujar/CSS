@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        body{
+            margin: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+
+        }
+        hr{
+            width: 100%;
+            height: 15px;
+            background-color: blueviolet;
+        }
+        #div1, #outside{
+            margin-bottom: 20px;
+            padding: 5px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 250px;
+            border: 1px solid gray;
+        }
+        #image1{
+            height: 100px;
+            width: 100px;
+            float: right;
+        }
+        #image2{
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+        #image3{
+            height: 100px;
+            width: 100px;
+            float: none;
+        }
+        #outside p{
+            height: 50px;
+            width: 800px;
+            float: right;
+        }
+        .inside1, .inside2,.inside3{
+            background-color: blueviolet;
+            height: 100px;
+            width: 100px;
+        }
+        .inside2{
+            background-color: rgb(226, 43, 128);
+            clear: right;
+        }
+        .container{
+            height:100px;
+            width: 100%;
+            padding: 10px;
+            border: 2px solid rgb(95, 226, 43)
+        }
+        .box{
+            float: left;
+            height: 100px;
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Float property</h1>
+    <p>The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.</p>
+    <p>Float property diffrent value</p>
+    <ul>
+        <li>left - The element floats to the left of its container</li>
+        <li>right - The element floats to the right of its container</li>
+        <li>none - The element does not float (will be displayed just where it occurs in the text).by defalut none is set</li>
+        <li>inherit - The element inherits the float value of its parent</li>
+    </ul>
+    <div id="div1">
+        <h3>Float Right</h3>
+        <p>
+            <img id="image1" src="..\Images\emoji.png" alt="emoji" title="float image">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas sequi in! Atque officia quod blanditiis soluta ducimus dignissimos impedit expedita quisquam, ratione perspiciatis aspernatur, cupiditate maxime iusto nulla enim!
+            Ducimus sed deleniti aliquid modi repellendus facilis eveniet, quaerat id! Laudantium excepturi qui saepe ipsa assumenda, tenetur, unde reiciendis magnam ab molestias soluta deleniti fugiat odio aut similique autem! Sequi!
+            Et est expedita non neque suscipit ut voluptas cum reiciendis, porro eveniet! Molestias, iusto totam quos at ut aliquid esse repellat a optio ratione adipisci in facere dolore consequuntur velit!
+            Officiis, debitis adipisci porro blanditiis error itaque ex perspiciatis maiores aspernatur voluptatibus sed, laudantium quidem odio mollitia, doloribus temporibus inventore. Quos ex dolores, quod doloremque dolorum amet saepe eos repellendus.
+            Deserunt, atque vero quod illum, ab autem nisi harum necessitatibus ullam cum laboriosam corrupti reprehenderit sed voluptatum veniam illo suscipit deleniti. Nam qui quisquam vel quia tempore ipsam quo ex.
+        </p>
+    </div>
+    <div id="div1">
+        <h3>Float left</h3>
+        <p>
+            <img id="image2" src="..\Images\emoji.png" alt="emoji" title="float image">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas sequi in! Atque officia quod blanditiis soluta ducimus dignissimos impedit expedita quisquam, ratione perspiciatis aspernatur, cupiditate maxime iusto nulla enim!
+            Ducimus sed deleniti aliquid modi repellendus facilis eveniet, quaerat id! Laudantium excepturi qui saepe ipsa assumenda, tenetur, unde reiciendis magnam ab molestias soluta deleniti fugiat odio aut similique autem! Sequi!
+            Et est expedita non neque suscipit ut voluptas cum reiciendis, porro eveniet! Molestias, iusto totam quos at ut aliquid esse repellat a optio ratione adipisci in facere dolore consequuntur velit!
+            Officiis, debitis adipisci porro blanditiis error itaque ex perspiciatis maiores aspernatur voluptatibus sed, laudantium quidem odio mollitia, doloribus temporibus inventore. Quos ex dolores, quod doloremque dolorum amet saepe eos repellendus.
+            Deserunt, atque vero quod illum, ab autem nisi harum necessitatibus ullam cum laboriosam corrupti reprehenderit sed voluptatum veniam illo suscipit deleniti. Nam qui quisquam vel quia tempore ipsam quo ex.
+        </p>
+    </div>
+    <div id="div1">
+        <h3>Float none</h3>
+        <p>
+            <img id="image3" src="..\Images\emoji.png" alt="emoji" title="float image">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas sequi in! Atque officia quod blanditiis soluta ducimus dignissimos impedit expedita quisquam, ratione perspiciatis aspernatur, cupiditate maxime iusto nulla enim!
+            Ducimus sed deleniti aliquid modi repellendus facilis eveniet, quaerat id! Laudantium excepturi qui saepe ipsa assumenda, tenetur, unde reiciendis magnam ab molestias soluta deleniti fugiat odio aut similique autem! Sequi!
+            Et est expedita non neque suscipit ut voluptas cum reiciendis, porro eveniet! Molestias, iusto totam quos at ut aliquid esse repellat a optio ratione adipisci in facere dolore consequuntur velit!
+            Officiis, debitis adipisci porro blanditiis error itaque ex perspiciatis maiores aspernatur voluptatibus sed, laudantium quidem odio mollitia, doloribus temporibus inventore. Quos ex dolores, quod doloremque dolorum amet saepe eos repellendus.
+            Deserunt, atque vero quod illum, ab autem nisi harum necessitatibus ullam cum laboriosam corrupti reprehenderit sed voluptatum veniam illo suscipit deleniti. Nam qui quisquam vel quia tempore ipsam quo ex.
+        </p>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h1>Clear Property</h1>
+    <p>When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property.</p>
+    <p>The clear property specifies what should happen with the element that is next to a floating element.</p>
+    <p>Values of clear property</p>
+    <ul>
+        <li>none - The element is not pushed below left or right floated elements. This is default</li>
+        <li>left - The element is pushed below left floated elements</li>
+        <li>right - The element is pushed below right floated elements</li>
+        <li>both - The element is pushed below both left and right floated elements</li>
+        <li>inherit - The element inherits the clear value from its parent</li>
+    </ul>
+    <div id="div1">
+        <h3>no float noclear</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt aut cumque similique quo cupiditate reiciendis. Nulla, exercitationem eveniet amet, debitis, quas nam sed ab excepturi odio explicabo molestiae obcaecati veritatis?
+            <div class="inside1"></div>
+      </p>
+    </div>
+    <div id="outside">
+        <h3>float with clear</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio fugiat dolorem ex quod magnam totam libero saepe possimus, officiis placeat quo laboriosam perspiciatis beatae! Corrupti reprehenderit aut quaerat mollitia possimus?
+            <div class="inside2"></div>
+      </p>
+    </div>
+    <div id="outside">
+        <h3>float with noclear</h3>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam velit quidem soluta laboriosam ipsum optio voluptate sequi repellendus. Officiis natus et est possimus dolorem sequi quidem delectus commodi fuga rerum?
+            <div class="inside3"></div>
+      </p>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h1>Example</h1>
+    <div class="container">
+        <div class="box" style="background-color: blueviolet;"></div>
+        <div class="box" style="background-color: rgb(226, 43, 134);"></div>
+        <div class="box" style="background-color: rgb(43, 220, 226);"></div>
+        <div class="box" style="background-color: rgb(223, 226, 43);"></div>
+    </div>
+</body>
+</html>

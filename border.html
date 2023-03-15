@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+    <style>
+        div{
+            box-sizing: border-box;
+            height: 100px;
+            width:100%;
+            margin: 20px;
+        }
+        #div1{
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            border-radius: 30px;
+            border-width: 5px
+        }
+        #div2{
+            border: 5px dashed rgb(223, 0, 93);
+            border-radius: 60px;
+        }
+        #div3{
+            border: 2px dotted rgb(0, 0, 0);
+            background-color: rgb(181, 204, 255);
+            border-left:10px solid blue ;
+        }
+        #div4{
+            border-style: double;
+        }
+        #div5{
+            border: 15px;
+            border-style: groove;
+        }
+        #div6{
+            border: 15px;
+            border-style: ridge;
+        }
+        #div7{
+            border: 15px;
+            border-style: inset;
+        }
+        #div8{
+            border: 15px;
+            border-style: outset;
+        }
+        #div9{
+            border: 5px royalblue;
+            border-style: dotted dashed solid double;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="div1"><p>border</p></div>
+    <div id="div2"><p>border</p></div>
+    <div id="div3"><p>border</p></div>
+    <div id="div4"><p>border-style: double </p></div>
+    <div id="div5"><p>border-style: groove</p></div>
+    <div id="div6"><p>border-style: ridge</p></div>
+    <div id="div7"><p>border-style: inset</p></div>
+    <div id="div8"><p>border-style: outset</p></div>
+    <div id="div9"><p>border-style: dotted dashed solid double</p></div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+    <style>
+        .example1{
+            counter-reset: increment;
+        }
+        .example1 p::after{
+            counter-increment: increment;
+            content: "Example " counter(increment) ": ";
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Counters in CSS</h1>
+    <p>
+        CSS counters are "variables" maintained by CSS whose values can be incremented by CSS rules (to track how many times they are used). Counters let you adjust the appearance of content based on its placement in the document.
+    </p>
+    <hr>
+    <h3>
+        Automatic Numbering With Counters
+    </h3>
+    <li><strong>counter-reset</strong> - Creates or resets a counter</li>
+    <li><strong>counter-increment</strong> - Increments a counter value</li>
+    <li><strong>content</strong> - Inserts generated content</li>
+    <li><strong>counter() or counters() function</strong> - Adds the value of a counter to an element</li>
+    <p>To use a CSS counter, it must first be created with counter-reset.</p>
+    <hr>
+    <br>
+    <h3>Example:</h3>
+    <div class="example1">
+        <h3>Incremental counter</h3>
+        <span>this is an </span><i> &nbsp; ~this is actual text</i>
+        <p>this is an </p>
+        <p>this is an </p>
+        <p>this is an </p>
+        <p>this is an </p>
+    </div>
+    <hr>
+    <div class="example2">
+        <h3>Reversed Counter</h3>
+        <span>this is an </span><i> &nbsp; ~this is actual text</i>
+        <p>this is an </p>
+        <p>this is an </p>
+        <p>this is an </p>
+        <p>this is an </p>
+    </div>
+</body>
+</html>

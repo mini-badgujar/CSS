@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        .div1{
+            height: 100px;
+            width: 100px;
+            border: 1px solid gray;
+            border-radius: 20px;
+            background-color: blueviolet;
+        }
+        .div2{
+            height: 100px;
+            width: 100px;
+            border: 1px solid gray;
+            border-radius: 20px;
+            background-color: rgb(226, 208, 43);
+        }
+        .div3{
+            height: 100px;
+            width: 100px;
+            border: 1px solid gray;
+            border-radius: 20px;
+            background-color: rgb(226, 43, 144);
+        }
+        .inline{
+            display: inline;
+        }
+        .block{
+            display: block;
+        }
+        .none .div2{
+            display: none;
+        }
+        .hidden .div2{
+            visibility:hidden;
+        }
+        .inline span{
+            display: inline;
+        }
+        .block span{
+            display: block;
+        }
+        .none span{
+            border: 1px solid gray;
+            display: none;
+        }
+        .hidden span{
+            border: 1px solid gray;
+            visibility:hidden;
+        }
+        .inlineblock div{
+            display: inline-block;
+            height: 50px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Property</h1>
+    <hr>
+    <h2>Display:inline</h2>
+    <div class="inline">
+        <span>this </span>
+        <span>is </span>
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <span>in</span>
+        <span>line</span>
+        
+    </div>
+    <br>
+    <h2>Display:block</h2>
+    <div class="block">
+        <span>this </span>
+        <span>is </span>
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <span>block</span>
+        
+    </div>
+    <br>
+    <h2>Display:none</h2>
+    <div class="none">
+        <span>this </span>
+        <span>is </span>
+        <span>in</span>
+        <span>none</span>
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+    <br>
+    <h2>visibility: hidden</h2>
+    <div class="hidden">
+        <span>this </span>
+        <span>is </span>
+        <span>in</span>
+        <span>hidden</span>
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+    <h2>Display: inline-block</h2>
+    <p>Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.</p>
+    <p>with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.</p>
+    <div class="inlineblock">
+        <span>this is in 
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+            inline-block
+        </span>
+        
+    </div>
+    
+</body>
+</html>

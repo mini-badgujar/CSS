@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text in CSS</title>
+
+    <style>
+        div{
+            box-sizing: border-box;
+            height: 150px;
+            width: 800px;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+        #div1{
+            color: blue;
+        }
+        #div2{
+            background-color: lightyellow;
+        }
+        #div3{
+            height: 300px;
+        }
+        #div3 #last{
+            color: rgb(255, 102, 0);
+            text-align-last: right;
+        }
+        #right{
+            color: red;
+            text-align: right;
+        }
+        #left{
+            color: rgb(2, 94, 14);
+            text-align: left;
+        }
+        #center{
+            color: rgb(183, 194, 29);
+            text-align: center;
+        }
+        #div4 #direct{
+            direction: rtl;
+            /* unicode-bidi: bidi-override; */
+        }
+        #div4 #bidirect{
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+        #div5{
+            height: 300px;
+        }
+        #div5 span{
+            color: rgb(226, 43, 171);
+            font-size: 20px
+        }
+        #div5 #base{
+            vertical-align:baseline ;
+        }
+        #div5 #top{
+            vertical-align: text-top;
+        }
+        #div5 #bottom{
+            vertical-align: text-bottom;
+        }
+        #div5 #sub{
+            vertical-align:sub ;
+        }
+        #div5 #super{
+            vertical-align: super;
+        }
+        #div6{
+            height: 200px;
+        }
+        #div6 #one{
+            text-decoration-line: overline;
+            text-decoration-color: blue;
+            text-decoration-style: dashed;
+        }
+        #div6 #two{
+            text-decoration-line:line-through ;
+            text-decoration-color: rgb(255, 0, 179);
+        }
+        #div6 #three{
+            text-decoration-line:underline ;
+            text-decoration-color: rgb(9, 255, 0);
+            text-decoration-style: wavy;
+        }
+        #div6 #four{
+            text-decoration-line: overline underline;
+            text-decoration-color: rgb(255, 230, 0);
+            text-decoration-thickness: 5px;
+        }
+        #div7{
+            height: 350px;
+        }
+        #div7 #one{
+            text-indent: 50px;
+        }
+        #div7 #two{
+            letter-spacing: 5px;
+        }#div7 #three{
+            background-color: aquamarine;
+            line-height: 50px;
+        }#div7 #four{
+            word-spacing: 10px;
+        }
+        #div7 #five{
+            white-space:break-spaces;
+        }
+        #div7 #six{
+            white-space:nowrap;
+        }
+        #div8{
+            color: blueviolet;
+            font-size: 50px;
+            text-shadow: 250px 0px 3px rgb(211, 0, 0);
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div id="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illo porro, iure, adipisci recusandae accusamus eum ea alias enim dolores esse quisquam quidem odit est eveniet dignissimos laboriosam mollitia. Dolor?
+        Nobis amet sed, quos distinctio voluptas ducimus illo quas. Velit est porro saepe doloremque sit? Dignissimos ipsa iste est. Nihil a animi, iusto eveniet non doloribus in autem ad eligendi!
+        Tenetur, dolores beatae non atque enim nobis vitae rem aliquid sint pariatur, deserunt consequuntur iure distinctio debitis vero quibusdam quasi recusandae nulla temporibus. Rerum esse maiores inventore at id illo.</p>
+    </div>
+    <div id="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illo porro, iure, adipisci recusandae accusamus eum ea alias enim dolores esse quisquam quidem odit est eveniet dignissimos laboriosam mollitia. Dolor?
+        Nobis amet sed, quos distinctio voluptas ducimus illo quas. Velit est porro saepe doloremque sit? Dignissimos ipsa iste est. Nihil a animi, iusto eveniet non doloribus in autem ad eligendi!
+        Tenetur, dolores beatae non atque enim nobis vitae rem aliquid sint pariatur, deserunt consequuntur iure distinctio debitis vero quibusdam quasi recusandae nulla temporibus. Rerum esse maiores inventore at id illo.</p>
+    </div>
+    <div id="div3">
+        <p id="right">right</p>
+        <p id="left">left</p>
+        <p id="center">center</p>
+        <p>one more line</p>
+        <p id="last">last line is aligned to right Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit fuga ipsa, voluptatum delectus et maxime libero vel. Eum enim doloribus sequi. Ab sint reprehenderit totam, cupiditate repellendus rerum numquam!
+        Atque, tenetur corporis cumque ex asperiores hic amet veritatis reprehenderit dolores, officiis repellendus eaque architecto natus, alias explicabo! Minus non dolores repellendus, esse dolor harum eos deserunt quis id commodi!</p>
+    </div>
+    <div id="div4">
+        <p>this is a line with no direction</p>
+        <p id="direct">this is a line is in right direction</p>
+        <p id="bidirect">this is a line is in right direction</p>
+    </div>
+    <div id="div5">
+        <p>This is a line and <span id="base">base</span>vertical alingnment is provided to this line</p>
+        <p>This is a line and <span id="top">top</span>vertical alingnment is provided to this line</p>
+        <p>This is a line and <span id="bottom">bottom</span>vertical alingnment is provided to this line</p>
+        <p>This is a line and <span id="sub">sub</span>vertical alingnment is provided to this line</p>
+        <p>This is a line and <span id="super">super</span>vertical alingnment is provided to this line</p>
+    </div>
+    <div id="div6">
+        <p id="one">this is a text decoration</p>
+        <p id="two">this is a text decoration</p>
+        <p id="three">this is a text decoration</p>
+        <p id="four">this is a text decoration</p>
+    </div>
+    <div id="div7">
+        <p id="one">this is a text spacing</p>
+        <p id="two">this is a text spacing</p>
+        <p id="three">this is a text spacing</p>
+        <p id="four">this is a text spacing</p>
+        <p id="five">
+            this is a text spacing
+            this is a text spacing
+            this is a text spacing
+        </p>
+        <p id="six">
+            this is a text spacing
+            this is a text spacing
+            this is a text spacing
+        </p>
+    </div>
+    <div id="div8">
+        <p>SHADOW</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation-Bar</title>
+    <style>
+        .nav1 ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav1 a{
+            text-decoration: none;
+        }
+        .nav2 ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0 ;
+            width: 200px;
+        }
+        .nav2 li{
+            padding-left: 10px;
+            height: 40px;
+            background-color: rgb(255, 182, 196);
+            margin: 10px 0px;
+            border: 0.5px solid maroon;
+        }
+        .nav2 a{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: maroon;
+            text-decoration: none;
+            line-height: 40px;
+            display: block;
+        }
+        .nav2 a:visited{
+            background-color: rgb(196, 132, 255);
+        }
+        
+        .nav2 li:hover{
+            background-color: crimson;
+        }
+        .nav2 a:hover{
+            color: white;
+        }
+        .nav2 li:active{
+            background-color: rgb(156, 226, 43);
+        }
+        .box{
+            height:240px;
+            border: 2px solid black;
+            overflow-y: scroll;
+        }
+        .nav3{
+            display: block;
+            float: left;
+            margin: 10px;
+            position: absolute;
+            position: sticky;
+        }
+        .nav3 li{
+            text-align: center;
+            background-color: rgb(64, 128, 0);
+        }
+        .nav3 a{
+            color: wheat;
+        }
+        .nav4{
+            display: block;
+            background-color:rgba(0, 0, 0, 0.712);
+            position: sticky;
+            top: 0;
+            height: 50px;
+            width: 100%;   
+        }
+        .nav4 li{
+            display: inline-block;
+            list-style-type: none;
+            height: 50px;
+            padding: 0 15px;
+        }
+        .nav4 a{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-decoration: none;
+            line-height: 50px;
+        }
+        .nav4 li:hover{
+            background-color: rgb(0, 0, 0);
+        }
+        .nav4 li:active{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navigation Bar</h1>
+    <hr>
+    <h3>Simple Navigation Bar</h3>
+    <div class="nav1">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <h3>Vertical Navigation Bar</h3>
+    <div class="nav2">
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/India" target="_blank">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <h3>Full-height Fixed Vertical Navbar</h3>
+    <div class="box">
+        <div class="nav2 nav3">
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/India" target="_blank">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <section>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus similique repudiandae, numquam facere cum illum error quo veniam dolore maxime! Ducimus repellat nihil officia quibusdam tenetur? Soluta quasi saepe reiciendis?
+            Placeat illum exercitationem laudantium autem. Iusto pariatur consequuntur cumque similique id, ut ab ea quam temporibus impedit amet eligendi velit officia vitae accusamus minus eum error, facilis quasi beatae voluptas.
+            Ab nobis rem itaque dolore laudantium distinctio esse consequuntur quisquam vero ipsa eaque cumque voluptatem facere dolor asperiores eos fugit eveniet vel, est perspiciatis perferendis fugiat. Dolores sequi dolor officiis.
+            Alias dolor modi molestias porro aliquam asperiores nostrum unde, ut veritatis fugiat assumenda officia voluptatibus cumque, iure totam. Autem libero nesciunt omnis ratione quisquam amet est aliquam ab quo obcaecati.
+            Facere laborum facilis eum alias incidunt doloremque quis sapiente, inventore at reiciendis ad dicta autem dignissimos ullam eos omnis dolorem! Eveniet quam dolorum dicta? Saepe alias magnam natus cum repellat?
+            Debitis aspernatur ea recusandae iste quam, tenetur ut asperiores dicta a sit. Rem molestias cum doloremque itaque inventore doloribus et, blanditiis nemo facilis fuga possimus ducimus iure nihil tempora voluptatum!
+            Numquam distinctio maiores omnis laborum recusandae voluptas, magni magnam aliquid laudantium harum voluptates atque praesentium, dolorem explicabo ea asperiores reprehenderit molestiae ad autem nemo dicta neque eum labore at! Hic?
+            Architecto temporibus debitis minima a reprehenderit quod ut ipsam vero tenetur porro animi magni eum tempore dolorum totam, officiis incidunt voluptates vel ipsum qui harum praesentium consectetur fugiat? Eius, repellat.
+            Ipsam blanditiis minus animi qui reiciendis, similique deserunt repudiandae sit aut maiores facere amet obcaecati corrupti illo! Pariatur consectetur perspiciatis nisi voluptates tenetur? Adipisci numquam, impedit incidunt culpa provident laborum.
+            Ad quaerat dolor, cumque rem temporibus dolorem delectus sint tempore minus magni iure incidunt beatae consequuntur explicabo officia doloribus hic quo. Quaerat impedit unde debitis cum quod reiciendis aspernatur et!</p>
+        </section>
+    </div>
+    <h3>Horizontal- navigation bar</h3>
+    <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem aliquam nobis, aspernatur necessitatibus molestias beatae quos reprehenderit dolores voluptatibus eum sapiente tempore minima tempora! Molestiae iure et est debitis explicabo?</p>
+        <div class="nav4">
+            
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/India" target="_blank">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <section>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus similique repudiandae, numquam facere cum illum error quo veniam dolore maxime! Ducimus repellat nihil officia quibusdam tenetur? Soluta quasi saepe reiciendis?
+            Placeat illum exercitationem laudantium autem. Iusto pariatur consequuntur cumque similique id, ut ab ea quam temporibus impedit amet eligendi velit officia vitae accusamus minus eum error, facilis quasi beatae voluptas.
+            Ab nobis rem itaque dolore laudantium distinctio esse consequuntur quisquam vero ipsa eaque cumque voluptatem facere dolor asperiores eos fugit eveniet vel, est perspiciatis perferendis fugiat. Dolores sequi dolor officiis.
+            Alias dolor modi molestias porro aliquam asperiores nostrum unde, ut veritatis fugiat assumenda officia voluptatibus cumque, iure totam. Autem libero nesciunt omnis ratione quisquam amet est aliquam ab quo obcaecati.
+            Facere laborum facilis eum alias incidunt doloremque quis sapiente, inventore at reiciendis ad dicta autem dignissimos ullam eos omnis dolorem! Eveniet quam dolorum dicta? Saepe alias magnam natus cum repellat?
+            Debitis aspernatur ea recusandae iste quam, tenetur ut asperiores dicta a sit. Rem molestias cum doloremque itaque inventore doloribus et, blanditiis nemo facilis fuga possimus ducimus iure nihil tempora voluptatum!
+            Numquam distinctio maiores omnis laborum recusandae voluptas, magni magnam aliquid laudantium harum voluptates atque praesentium, dolorem explicabo ea asperiores reprehenderit molestiae ad autem nemo dicta neque eum labore at! Hic?
+            Architecto temporibus debitis minima a reprehenderit quod ut ipsam vero tenetur porro animi magni eum tempore dolorum totam, officiis incidunt voluptates vel ipsum qui harum praesentium consectetur fugiat? Eius, repellat.
+            Ipsam blanditiis minus animi qui reiciendis, similique deserunt repudiandae sit aut maiores facere amet obcaecati corrupti illo! Pariatur consectetur perspiciatis nisi voluptates tenetur? Adipisci numquam, impedit incidunt culpa provident laborum.
+            Ad quaerat dolor, cumque rem temporibus dolorem delectus sint tempore minus magni iure incidunt beatae consequuntur explicabo officia doloribus hic quo. Quaerat impedit unde debitis cum quod reiciendis aspernatur et!</p>
+        </section>
+    </div>
+</body>
+</html>
