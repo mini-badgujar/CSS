@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+    <style>
+        .box{
+            margin-left: 200px;
+            box-sizing: border-box;
+            height: 100px;
+            width: 100px;
+            background-color: rgba(220, 20, 60, 0.582);
+            border: 2px dotted maroon;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+        }
+        .one:hover{
+            transform: translate(300px, 0px);
+        }
+        .two:hover{
+            transform: rotate(50deg);
+        }
+        .three:hover{
+            transform: scale(3,3);
+        }
+        .four:hover{
+            transform: scale(0.5,0.5);
+        }
+        .five:hover{
+            transform: skewX(20deg)
+        }
+        .six:hover{
+            transform: skewY(20deg);
+        }
+        .seven:hover{
+            transform: matrix(2, 0, 0, 2,100,-200);
+        }
+        .eight:hover{
+            transform: matrix(1, 0, 1, 1,0,0);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        CSS 2D Transforms
+    </h1>
+    <p>CSS transforms allow you to move, rotate, scale, and skew elements.</p>
+    <h3>CSS 2D Transforms Methods</h3>
+    <p>With the CSS transform property you can use the following 2D transformation methods:</p>
+    <li>translate()</li>
+    <li>rotate()</li>
+    <li>scaleX()</li>
+    <li>scaleY()</li>
+    <li>skewX()</li>
+    <li>skewY()</li>
+    <li>skew</li>
+    <li>matrix</li>
+    <hr>
+    <h3>Example:</h3>
+    <h3>Translate</h3>
+    <p>The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).</p>
+    <div class="box one">
+        <p>Translate</p>
+        <p>Hover over me</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Rotate</h3>
+    <p>The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.</p>
+    <p>Using negative values will rotate the element counter-clockwise.</p>
+    <div class="box two">
+        <p>Rotate 270deg</p>
+        <p>Hover over me</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Scale</h3>
+    <p>The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).</p>
+    <p>The following example increases the div element to be two times of its original width, and three times of its original height:</p>
+    <div class="box three">
+        <p>Scale up</p>
+        <p>Hover over me</p>
+    </div>
+    <p>similarly</p>
+    <div class="box four">
+        <p>Scale down</p>
+        <p>Hover over me</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>skew</h3>
+    <p>The skew() method skews an element along the X and Y-axis by the given angles</p>
+    <div class="box five">
+        <p>skewX</p>
+        <p>Hover over me</p>
+    </div>
+    <br>
+    <br>
+    <div class="box six">
+        <p>skewY</p>
+        <p>Hover over me</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Matrix</h3>
+    <p>The matrix() method combines all the 2D transform methods into one.</p>
+    <p>The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())</p>
+    <div class="box seven">
+        <p>Matrix</p>
+        <p>Hover over me</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="box eight">
+        <p>Matrix</p>
+        <p>Hover over me</p>
+    </div>
+</body>
+</html>

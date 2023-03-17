@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling images</title>
+    <style>
+        .card{
+            height: 350px;
+            width: 250px;
+            border: 1px solid gray;
+        }
+        .box{
+            height: auto;
+            width: 100%;
+            text-align: center;
+        }
+        .card img{
+            height: 85%;
+            width: 100%;
+        }
+        .card:hover{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+        }
+        
+        .img1{
+            filter:blur(4px);
+        }
+        .img2{
+            filter:grayscale(50%);
+        }
+        .img3{
+            filter: hue-rotate(120deg);
+        }
+        .img4{
+            filter: saturate(7);
+        }
+    </style>
+</head>
+<body>
+    <h1>Polaroid Images or Image Cards</h1>
+    <div class="card">
+        <img src="..\Images\background1.jpg">
+        <div class="box">
+            <p> WATER DROPS</p>
+        </div>
+    </div>
+    <h1>Image Filters</h1>
+    <img class="img1" src="..\Images\sunset.jpg">
+    <img class="img2" src="..\Images\sunset.jpg">
+    <img class="img3" src="..\Images\sunset.jpg">
+    <img class="img4" src="..\Images\sunset.jpg">
+</body>
+</html>

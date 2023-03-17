@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D- Transform</title>
+    <style>
+        .box{
+            margin-left: 200px;
+            box-sizing: border-box;
+            height: 100px;
+            width: 100px;
+            background-color: rgba(73, 20, 220, 0.582);
+            border: 2px dotted maroon;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+        }
+        .one{
+            transform: rotateX(180deg);
+        }
+        .two{
+            transform: rotateY(180deg);
+        }
+        .three{
+            transform: rotateZ(90deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 3D Transforms</h1>
+    <p>With the CSS transform property you can use the following 3D transformation methods</p>
+    <li>rotateX()</li>
+    <li>rotateY()</li>
+    <li>rotateZ()</li>
+    <h3>The rotateX() Method</h3>
+    <p>similar to water image</p>
+    <p>The rotateX() method rotates an element around its X-axis at a given degree:</p>
+    <div class="box"><p>this is div</p></div>
+    <p>below is water image of div because it rotate 180deg</p>
+    <div class="box one"><p>this is div</p></div> 
+    <br>
+    <br>
+    <h3>The rotateY() Method</h3>
+    <p>similar to mirror image</p>
+    <p>The rotateY() method rotates an element around its y-axis at a given degree:</p>
+    <div class="box"><p>this is div</p></div>
+    <p>below is mirror image of div because it rotate 180deg</p>
+    <div class="box two"><p>this is div</p></div> 
+    <br>
+    <br>
+    <h3>The rotateZ() Method</h3>
+    <p>similar to noraml rotate</p>
+    <p>The rotateZ() method rotates an element around its Z-axis at a given degree:</p>
+    <div class="box"><p>this is div</p></div>
+    <p>below is of div because it rotate 90deg</p>
+    <div class="box three"><p>this is div</p></div>
+</body>
+</html>

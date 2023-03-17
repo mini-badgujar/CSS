@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <style>
+        body{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+            padding-left: 50px;
+		}
+        .box{
+            border: 0.5px solid rgb(184, 3, 3);
+            border-left: 10px solid rgb(190, 2, 2);
+            border-radius: 5px;
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            background-color:rgb(255, 255, 255);
+            color: crimson;
+            box-shadow: 0 0 10px 2px crimson;
+            line-height: 2px;
+            display: none;
+            animation-name: success;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+            
+        }
+        @keyframes success{
+            0%{
+                margin-left: 1350px;
+            }
+            50%{
+                margin-left: 1000px;
+            }
+            100%{
+                margin-left: 1350px;
+            }
+        }
+        .hover{
+            height:50px;
+            width: 200px;
+            line-height: 2px;
+            border: 1px dotted rgb(16, 97, 0);
+            text-align: center;
+            font-size: 25px;
+            color: rgb(107, 179, 0);
+            animation-name: blink;
+            animation-iteration-count: infinite;
+            animation-duration: 7s;
+            box-shadow: 0 0 10px 2px rgb(179, 255, 0);
+        }
+        @keyframes blink{
+            0%{
+                box-shadow: 0 0 10px 2px green;
+                color: green;
+            }
+            25%{
+                box-shadow: 0 0 10px 2px greenyellow;
+                color: greenyellow;
+            }
+            50%{
+                box-shadow: 0 0 10px 2px yellow;
+                color: yellow;
+            }
+            75%{
+                box-shadow: 0 0 10px 2px greenyellow;
+                color: greenyellow;
+            }
+            100%{
+                box-shadow: 0 0 10px 2px green;
+                color: green;
+            }
+        }
+        .hover:hover + .box{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <div class="hover">
+        <p>Hover over me!</p>
+    </div>
+    <div class="box">
+        <p>Success</p>
+    </div>
+    
+</body>
+</html>

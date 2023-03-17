@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Images</title>
+    <style>
+        .box{
+            border: 20px solid;
+            height: 80px;
+            width: 800px;
+            margin: 20px;
+            margin-bottom: 50px;
+            padding-left: 50px;  
+            font-size: 25px;        
+            font-family:Arial, Helvetica, sans-serif;  
+        }
+        .box1{
+            border-image: url('border.png') 30 round;
+        }
+        .box1 img{
+            float: left;
+        }
+        .box2{
+            border-image: url('border.png') 30 stretch;
+        }
+        .box3{
+            border-image: url('border.png') 50 round;
+        }
+        .box4{
+            border-image: url('border.png') 20% round;
+        }
+        .box5{
+            border-image: url('border.png') 30% round;
+        }
+        .box6{
+            border-image: url('border.png') 20% stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Border Images</h1>
+    <h3>CSS Border Images</h3>
+    <p>The CSS border-image property allows you to specify an image to be used instead of the normal border around an element.</p>
+
+    <hr>
+
+    <h3>The property has three parts:</h3>
+    <li>The image to use as the border</li>
+    <li>Where to slice the image</li>
+    <li>Define whether the middle sections should be repeated or stretched</li>
+    <br>
+    <div class="box box1">
+        <img src="..\Images\border.png"><p>round property set</p>
+    </div>
+    <div class="box box2">
+       <p>stretch property set</p>
+    </div>
+    <div class="box box3">
+        <p>50 round</p>
+    </div>
+    <div class="box box4">
+        <p>20% round</p>
+    </div>
+    <div class="box box5">
+        <p>30% round</p>
+    </div>
+    <div class="box box6">
+        <p>20% stretch</p>
+    </div>
+</body>
+</html>

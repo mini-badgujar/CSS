@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid navy;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-color: skyblue;
+            transition-property: width, border ,background-image;
+            transition-duration: 5s,5s,5s;
+            transition-delay: 1s;
+        }
+        .box:hover{
+            width: 500px;
+            border: 5px dotted rgb(255, 43, 174);
+            background-image: linear-gradient(to right,skyblue, pink);
+        }
+        .t{
+            box-sizing: border-box;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border: 1px solid rgb(255, 9, 9);
+            border-radius: 50px;
+            background-color: darksalmon;
+            margin: 10px;
+        }
+        .div1{
+            transition: width 2s, background-color 2s;
+            transition-timing-function: linear;
+        }
+        div p{
+            display:none;
+        }
+        .div1:hover{
+            width: 300px;
+            background-color: skyblue;
+        }
+        div:hover p{
+            display:block 
+        }
+        .div2{
+            transition: width 2s, background-color 2s;
+            transition-timing-function: ease;
+        }
+        
+        .div2:hover{
+            width: 300px;
+            background-color: skyblue;
+        }
+        
+        .div3{
+            transition: width 2s, background-color 2s;
+            transition-timing-function: ease-in;
+        }
+        .div3:hover{
+            width: 300px;
+            background-color: skyblue;
+        }
+        .div4{
+            transition: width 2s, background-color 2s;
+            transition-timing-function: ease-out;
+        }
+        .div4:hover{
+            width: 300px;
+            background-color: skyblue;
+        }
+        .div5{
+            transition: width 2s, background-color 2s;
+            transition-timing-function: ease-in-out;
+        }
+        .div5:hover{
+            width: 300px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transitions</h1>
+    <p>CSS transitions allows you to change property values smoothly, over a given duration</p>
+    <p>Diffrent transition properties:</p>
+    
+    <li>transition-delay - Defines how long to wait between the time a property is changed and the transition actually begins.</li>
+    <li> transition-duration - Specifies the duration over which transitions should occur.</li>
+    <li>transition-property - - Specifies the name or names of the CSS properties to which transitions should be applied.</li>
+    <li> transition-timing-function - Specifies a function to define how intermediate values for properties are computed. Timing functions determine how intermediate values of the transition are calculated.</li>
+
+    <p>To create a transition effect, you must specify two things:</p>
+    <li>the CSS property you want to add an effect to</li>
+    <li>the duration of the effect</li>
+    <p style="color: red;">Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.</p>
+    <div class="box"><br><br>hover over me</div>
+    <br>
+    <hr>
+    <br>
+    <h3>Specify the Speed Curve of the Transition</h3>
+    <p>The transition-timing-function property specifies the speed curve of the transition effect.</p>
+    <li>ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)</li>
+    <li>linear - specifies a transition effect with the same speed from start to end</li>
+    <li>ease-in - specifies a transition effect with a slow start</li>
+    <li>ease-out - specifies a transition effect with a slow end</li>
+    <li>ease-in-out - specifies a transition effect with a slow start and end</li>
+    <li>cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function</li>
+    <div class="t div1"><p>transition-timing-function: linear;</p></div>
+    <div class="t div2"><p>transition-timing-function: ease;</p></div>
+    <div class="t div3"><p>transition-timing-function: ease-in</p></div>
+    <div class="t div4"><p>transition-timing-function: ease-out;</p></div>
+    <div class="t div5"><p>transition-timing-function: ease-in-out;</p></div>
+
+</body>
+</html>

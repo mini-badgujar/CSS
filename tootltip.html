@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolTips</title>
+    <style>
+        .tooltip{
+            display:inline-block;
+            height: 50px;
+            width: 150px;
+            line-height: 50px;
+            border: 1px solid gray;
+            text-align: center;
+            background-color: rgb(198, 143, 250);
+        }
+        .tooltiptext{
+            position: absolute;
+            top: 160px;
+            left: 160px;
+            height: 50px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 10px ;
+            text-align: center;
+            line-height: 50px;
+            visibility: hidden;
+            margin-left: 20px;
+            background-color: rgb(78, 78, 78);
+            color: white;
+        }
+        .tooltiptext::after{
+            content: "";
+            position: absolute;
+            top: 35%;
+            left: -14%;
+            border-width: 7px;
+            border-style: solid;
+            border-color:transparent rgb(78, 78, 78) transparent transparent;
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tool Tips</h1>
+    <p>A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element</p>
+    <hr>
+    <h3>Example:</h3>
+    <div class="tooltip">Hover over me
+        <p class="tooltiptext">Tooltip</p>
+    </div>
+</body>
+</html>
