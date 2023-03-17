@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            border: 1px solid gray;
+        }
+        .one{
+            background-image: url(../Images/flower3.png),url(../Images/background.jpg);
+            background-position: center, left top;
+            background-repeat: no-repeat, no-repeat;
+            background-size: auto, cover;
+        }
+        .two{
+            margin: 50px;
+            padding: 50px;
+            background-size: cover;
+            border: 10px dotted rgb(156, 0, 0);
+            background-image: url(../Images/background.jpg);
+            background-clip: border-box;
+        }
+        .three{
+            margin: 50px;
+            padding: 50px;
+            background-size: cover;
+            border: 10px dashed rgb(18, 199, 2);
+            background-image: url(../Images/background.jpg);
+            background-clip:content-box;
+        }
+        .four{
+            margin: 50px;
+            padding: 50px;
+            background-size: cover;
+            border: 10px dotted rgb(174, 2, 180);
+            background-image: url(../Images/background.jpg);
+            background-clip: padding-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Multiple Backgrounds</h1>
+    <p>CSS allows you to add multiple background images for an element, through the background-image property.</p>
+    <p>The different background images are separated by commas, and the images are stacked on top of each other, where the first image is closest to the viewer.</p>
+    <div class="box one"></div>
+    <p>you can set the size of background image using background-size property</p>
+    <p>The size can be specified in lengths, percentages, or by using one of the two keywords: contain or cover.</p>
+    <p>The contain keyword scales the background image to be as large as possible (but both its width and its height must fit inside the content area).</p>
+    <p>The cover keyword scales the background image so that the content area is completely covered by the background image (both its width and height are equal to or exceed the content area)</p>
+    <hr>
+    <h1> CSS background-clip Property</h1>
+    <p>The CSS background-clip property specifies the painting area of the background.</p>
+    <p>The property takes three different values</p>
+    <br>
+    <li>border-box - (default) the background is painted to the outside edge of the border</li>
+    <div class="box two"></div>
+    <br>
+    <li> padding-box - the background is painted to the outside edge of the padding</li>
+    <div class="box three"></div>
+    <br>
+    <li> content-box - the background is painted within the content box</li>
+    <div class="box four"></div>
+</body>
+</html>

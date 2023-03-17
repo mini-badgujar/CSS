@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        .not-understand{
+            color: red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .box1{
+            width: 600px;
+            height: 100px;
+            margin: 10px;
+        }
+        .box1.one{
+            background-image: linear-gradient(red, yellow );
+        }
+        .box1.two{
+            background-image: linear-gradient(to right ,red, yellow );
+        }
+        .box1.three{
+            background-image: linear-gradient(to left , blue,red, yellow);
+        }
+        .box1.four{
+            background-image: linear-gradient(to bottom right ,rgb(145, 239, 255,0.5),rgba(255, 0, 0, 0.39), rgba(255, 255, 0, 0.521) );
+        }
+        .box1.five{
+            background-image: linear-gradient(90deg ,red, yellow );
+        }
+        .box1.six{
+            background-image: linear-gradient(180deg ,red, yellow );
+        }
+        .box1.seven{
+            background-image: repeating-linear-gradient(red 10%, yellow 20%, rgb(0, 94, 131) 30% );
+        }
+        .box2{
+            width: 600px;
+            height: 200px;
+            margin: 10px;
+            
+        }
+        .box2.one{
+            background-image:radial-gradient(red, yellow, green);
+        }
+        .box2.two{
+            color: white;
+            background-image:radial-gradient(red 5%, yellow 15%, green 60%);
+        }
+        .box2.three{
+            background-image:radial-gradient(circle,red, yellow, green);
+        }
+        .box2.four{
+            background-image: repeating-radial-gradient(red 20%, yellow 25%, green 30%);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Gradients</h1>
+    <hr>
+    <p>CSS gradients let you display smooth transitions between two or more specified colors.</p>
+    <h3><li>Linear Gradients (goes down/up/left/right/diagonally)</li></h3>
+    <h3><li>Radial Gradients (defined by their center)</li></h3>
+    <h3><li>Conic Gradients (rotated around a center point)</li></h3>
+    <hr>
+    <h2>CSS Linear Gradients</h2>
+    <p>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.</p>
+    <div class="box1 one"><h3>top to bottom</h3></div>
+    <div class="box1 two"><h3>left to right</h3></div>
+    <div class="box1 three"><h3>right to left with multiple color</h3></div>
+    <div class="box1 four"><h3>diagonal left with transparency</h3></div>
+    <div class="box1 five"><h3>using angle of 90 degree</h3></div>
+    <div class="box1 six"><h3>using angle of 180 degree</h3></div>
+    <div class="box1 seven"><h3>repeating</h3></div>
+    <br>
+    <hr>
+    <br>
+    <h2>CSS Radial Gradients</h2>
+    <p>A radial gradient is defined by its center.To create a radial gradient you must also define at least two color stops.</p>
+    <p>By default, shape is ellipse, size is farthest-corner, and position is center.</p>
+    <div class="box2 one"><h3>Radial Gradient - Evenly Spaced Color Stops (this is default)</h3></div>
+    <div class="box2 two"><h3>Radial Gradient - Differently Spaced Color Stops</h3></div>
+    <h3>Set Shape</h3>
+    <p>The shape parameter defines the shape. It can take the value circle or ellipse. The default value is ellipse.</p>
+    <div class="box2 three"><h3>Circle shape radial gradient</h3></div>
+    <div class="box2 four"><h3>repeating radial gradient</h3></div>
+    <div class="not-understand">
+    <h3>Use of Different Size Keywords</h3>
+    <p>The size parameter defines the size of the gradient. It can take four values:</p>
+    <li>closest-side</li>
+    <li>farthest-side</li>
+    <li>closest-corner</li>
+    <li>farthest-corner</li>
+    </div>
+</body>
+</html>

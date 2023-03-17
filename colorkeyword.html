@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color-keyword</title>
+    <style>
+        body{
+            background-color: burlywood;
+            
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid pink;
+            
+        }
+        .one{
+            background-color: rgb(255, 0, 51);
+            background-color:transparent;
+
+        }
+        .two{
+            color: greenyellow;
+            border: 2px dotted currentcolor;
+        }
+        .main{
+            background-color: rgb(253, 255, 127);
+            color: crimson;
+            border: 2px solid salmon;
+        }
+        .three{
+            background-color: inherit;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <h1>color keywords</h1>
+    <p>transparent, currentcolor, and inherit keywords.</p>
+    <h3>The transparent Keyword</h3><p>The transparent keyword is used to make a color transparent. This is often used to make a transparent background color for an element.</p>
+    <div class="one"><p>this is transparent</p></div>
+    <h3>The currentcolor Keyword</h3><p>The currentcolor keyword is like a variable that holds the current value of the color property of an element.This keyword can be useful if you want a specific color to be consistent in an element or a page.</p>
+    <div class="two"><p>current color of this element is green</p></div>
+    <h3>The inherit Keyword</h3><p>The inherit keyword specifies that a property should inherit its value from its parent element.The inherit keyword can be used for any CSS property, and on any HTML element.</p>
+    <div class="main"><div class="three"><p>this element style is inherited from it's direct parent of this element</p></div></div> 
+</body>
+</html>
