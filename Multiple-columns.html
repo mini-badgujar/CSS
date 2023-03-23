@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple columns</title>
+    <style>
+        .container{
+            height: 150px;
+            width: 100%;
+            border: 1px solid gray;
+            column-count: 4;
+            column-gap: 100px;
+            column-rule-style: dashed;
+            column-rule-width: 5px;
+            column-rule-color: darkblue;
+            text-align: justify;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Multiple Columns</h1>
+    <p>The CSS multi-column layout allows easy definition of multiple columns of text.</p>
+    <h3>Multi-column properties</h3>
+    <li>column-count</li>
+    <li>column-gap</li>
+    <li>column-rule-style</li>
+    <li>column-rule-width</li>
+    <li>column-rule-color</li>
+    <li>column-rule</li>
+    <li>column-span</li>
+    <li>column-width</li>
+    <br>
+    <hr>
+    <h3>Example</h3>
+    <p>The column-count property specifies the number of columns an element should be divided into.The following example will divide the text in the &lt;div&gt; element into 3 columns: </p>
+    <div class="container">
+       <div class="column1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ullam provident recusandae rerum autem expedita, animi, blanditiis, a dolorem dolores minima. Quam aliquam dolores voluptatum enim rerum consequatur quae fuga?</p></div>
+       <div class="column2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ullam provident recusandae rerum autem expedita, animi, blanditiis, a dolorem dolores minima. Quam aliquam dolores voluptatum enim rerum consequatur quae fuga?</p></div>
+        <div class="column3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ullam provident recusandae rerum autem expedita, animi, blanditiis, a dolorem dolores minima. Quam aliquam dolores voluptatum enim rerum consequatur quae fuga?</p></div>
+        <div class="column4"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ullam provident recusandae rerum autem expedita, animi, blanditiis, a dolorem dolores minima. Quam aliquam dolores voluptatum enim rerum consequatur quae fuga?</p></div>
+    </div>
+</body>
+</html>

@@ -36,8 +36,23 @@
 }
 .button5:hover{
     background-color:rgba(172, 255, 47, 0.603);
-    color:black;
-    
+    color:black; 
+}
+.disable{
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+.animate{
+    padding-left: 100px;
+}
+.animate1 span{
+    display: none;
+}
+.animate1:hover span{
+    display: inline;
+}
+.animate1:hover{
+    padding-left: 18px;
 }
 </style>
 </head>
@@ -51,6 +66,12 @@
 <button class="button button3">Button</button>
 <input type="button" class="button button4" value="Button">
 <button class="button button5">Button</button>
+<br>
+<br>
+<h3>Disable Buttons</h3>
+<button class="button disable">Hover over me</button>
+<p>Example: Add an arrow on hover:</p>
+<button class="button animate1">Hover me<span> &gt;&gt;</span></button>
 </body>
 </html>
 
