@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root{
+            --text-color: crimson;
+            --lcolor: violet;
+            --bg: rgb(180, 221, 255);
+            --tg: rgb(255, 254, 180);
+        }
+        .box{
+            box-sizing: border-box;
+            border: 1px solid var(--lcolor);
+            column-count: 3;
+            column-gap: 100px;
+            column-rule-color: var(--lcolor);
+            column-rule-style: solid;
+            background-color: var(--bg);
+        }
+        .column1{
+            color: var(--text-color);
+            background-color: var(--tg);
+        }
+        .column3{
+            color: var(--text-color);
+            background-color: var(--tg); 
+        }
+        
+        .second{
+            --back:cornsilk;
+            --text-color: green;
+            --lcolor: rgb(255, 0, 0);
+            color: var(--text-color);
+            column-rule-color: var(--lcolor);
+            background-color: var(--back);
+        }
+        .one{
+            --bg:rgb(255, 168, 168);
+            background-color: var(--bg);
+        }
+        .two{
+            --newcolor:purple;
+            color:var(--newcolor)
+        }
+        .three{
+            background-color: var(--newcolor);
+        }
+        @media screen and (max-width:800px){
+            .second{
+                --lcolor: rgb(63, 5, 63);
+               column-rule-color: var(--lcolor);
+            }
+            .one{
+                --bg: rgb(198, 255, 180);
+                background-color: var(--bg);
+            }
+            .two{
+                --newcolor:rgb(20, 57, 220);
+                color:var(--newcolor)
+            }
+            .three{
+                --bg: rgb(255, 180, 230);
+                background-color: var(--);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Variables</h1>
+    <p>CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries.</p>
+    <h3>Where can we use CSS variables</h3>
+    <p>A good way to use CSS variables is when it comes to the colors of your design. Instead of copy and paste the same colors over and over again, you can place them in variables.</p>
+    <hr>
+    <h3>Syntax of the var() Function</h3>   
+    <code>var(--name, value)</code> 
+    <br>
+    <br>
+    <li>To create a variable with global scope(var can be accessed anywhere in the document), declare it inside the :root selector. The :root selector matches the document's root element.</li>
+    <li>To create a variable with local scope(var can only b accessed within the desired selector), declare it inside the selector that is going to use it.</li>
+    <br>
+    <h3>Example Global Variable</h3>
+    <div class="box">
+        <div class="column1"><p>This is column one<br>Lorem ipsum dolor sit amet consectetur adipisicing!</p></div>
+        <div class="column2"><p>This is column two<br>Lorem ipsum dolor sit amet consectetur adipisicing!</p></div>
+        <div class="column3"><p>This is column three<br>Lorem ipsum dolor sit amet consectetur adipisicing!</p></div>
+    </div>
+   <br>
+    <h3>Example Local Varible</h3>
+    <p>Sometimes we want the variables to change only in a specific section of the page.</p>
+    <p>to solve such problem wwe can either redeclare global variable inside an element or we can create a new local varible</p>
+    <div class="box second">
+        <div class=" one"><p>This is column one<br>Lorem ipsum dolor sit amet consectetur adipisicing!</p></div>
+        <div class=" two"><p>This is column two<br>Lorem ipsum dolor sit amet consectetur adipisicing!</p></div>
+        <div class=" three"><p>This is column three<br>Lorem ipsum dolor sit amet consectetur adipisicing!</p></div>
+    </div>
+</body>
+</html>

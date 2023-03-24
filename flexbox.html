@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body{
+            padding: 0px 10px;
+            border: 1px solid gray;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h1:first-child{
+            height: 100px;
+            text-align: center;
+            color: blanchedalmond;
+            background-color: crimson;
+            
+        }
+        h1{
+            color: blanchedalmond;
+            background-color: maroon; 
+            padding: 10px;
+            border: 5px solid rgba(0, 0, 0, 0.61);
+            border-style: inset;
+        }
+        strong{
+            font-size: 22px;
+            color: rgb(145, 27, 255);
+            
+        }
+        .container{
+            box-sizing: border-box;
+            width: 100%;
+            border: 5px solid gray;
+            border-style: inset;
+            background-color: rgb(102, 180, 243);
+            display: flex;
+        }
+        .container >div{
+            box-sizing: border-box;
+            height: 60px;
+            width: 60px;
+            background-color: beige;
+            margin: 10px;
+            text-align: center;
+            border: 1px solid darkblue;
+            
+        }
+        .wrap > div{
+            flex: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Flexbox Layout Module</h1>
+    <p>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.</p>
+    
+    <h1>flex container properties</h1>
+    <li><strong>flex-direction</strong>- The flex-direction property defines in which direction the container wants to stack the flex items.
+        <ol>
+            <li>The column value stacks the flex items vertically (from top to bottom)</li>
+            <li>The column-reverse value stacks the flex items vertically (but from bottom to top)</li>
+            <li>The row value stacks the flex items horizontally (from left to right)</li>
+            <li>The row-reverse value stacks the flex items horizontally (but from right to left)</li>
+        
+        </ol>  
+        <h3>Example: row reverse </h3>
+        <div class="container" style="flex-direction: row-reverse;">
+            <div class="box one">1</div>
+            <div class="box two">2</div>
+            <div class="box three">3</div>
+        </div>  
+    </li>
+    <br>
+    <br>
+    <li><strong>flex-wrap</strong>- The flex-wrap property specifies whether the flex items should wrap or not.
+        <ol>
+            <li>The wrap value specifies that the flex items will wrap if necessary</li>
+            <li>The nowrap value specifies that the flex items will not wrap (this is default)</li>
+            <li>The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order</li>
+        </ol>
+        <h3>Example: flex nowrap</h3>
+        <div class="container"style="flex-wrap: nowrap;">
+            <div class="box one">1 this will overflow</div>
+            <div class="box two">2 this will overflow</div>
+            <div class="box three">3 this will overflow</div>
+        </div>
+        <h3>Example: flex wrap</h3>
+        <div class="container wrap"style="flex-wrap: wrap;">
+            <div class="box one">1 this will wrap</div>
+            <div class="box two">2 this will wrap</div>
+            <div class="box three">3 this will wrap</div>
+            <div class="box one">1 this will owrap</div>
+            <div class="box two">2 this will wrap</div>
+            <div class="box three">3 this will wrap</div>
+            <div class="box one">1 this will wrap</div>
+            <div class="box two">2 this will wrap</div>
+            <div class="box three">3 this will wrap</div>
+        </div>
+    </li>
+    
+    <li><strong>flex-flow</strong>- The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.</li>
+    <li><strong>justify-content</strong>- The justify-content property is used to align the flex items
+        <ol>
+            <li>The center value aligns the flex items at the center of the container</li>
+            <li>The flex-start value aligns the flex items at the beginning of the container (this is default)</li>
+            <li>The flex-end value aligns the flex items at the end of the container</li>
+            <li>The space-around value displays the flex items with space before, between, and after the lines</li>
+            <li>The space-between value displays the flex items with space between the lines.</li>
+        </ol>
+    </li>
+    <li><strong>align-items</strong>- The align-items property is used to align the flex items.
+        <ol>
+            <li>The center value aligns the flex items in the middle of the containe</li>
+            <li>The flex-start value aligns the flex items at the top of the container</li>
+            <li>The flex-end value aligns the flex items at the bottom of the container</li>
+            <li>The stretch value stretches the flex items to fill the container (this is default)</li>
+            <li>The baseline value aligns the flex items such as their baselines aligns</li>
+        </ol>
+    </li>
+    <li><strong>align-content</strong>- The align-content property is used to align the flex lines.
+        <ol>
+            <li>The space-between value displays the flex lines with equal space between them</li>
+            <li>The space-around value displays the flex lines with space before, between, and after them</li>
+            <li>The stretch value stretches the flex lines to take up the remaining space (this is default)</li>
+            <li>The center value displays display the flex lines in the middle of the container</li>
+            <li>The flex-start value displays the flex lines at the start of the container</li>
+            <li>The flex-end value displays the flex lines at the end of the container</li>
+        </ol>
+    </li>
+
+    <h1>The flex item properties</h1>
+    <li><strong>order</strong>- The order property specifies the order of the flex items.</li>
+    <li><strong>flex-grow</strong>- The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.</li>
+    <li><strong>flex-shrink</strong>- The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items.</li>
+    <li><strong>flex-basis</strong>- The flex-basis property specifies the initial length of a flex item.</li>
+    <li><strong>flex</strong>- The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.</li>
+    <li><strong>align-self</strong>- The align-self property specifies the alignment for the selected item inside the flexible container.</li>
+    <hr>
+    <br>
+    <h3>Example</h3>
+    <div class="container">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+        <div class="box three">3</div>
+    </div>
+</body>
+</html>
